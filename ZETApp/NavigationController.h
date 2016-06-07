@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NavigationController.h
 //  ZETApp
 //
 //  Created by Mantas Laurinavicius on 06/06/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NavigationController : UINavigationController
 
 @end
-
