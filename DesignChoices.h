@@ -11,6 +11,7 @@
 #define HexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define navBarColor 0xDDBF00
 #define headerBackgroundColor 0xF2F2F2
+#define footerBackgroundLineColor 0xDCDCDC
 
 #define saveButtonBackground 0x497800
 #define cancelButtonBackground 0xE72E24

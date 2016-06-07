@@ -142,11 +142,18 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    if (section == 2) {
     FooterView *footer = [[FooterView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
     footer.backgroundColor = HexColor(headerBackgroundColor);
     footer.parent = self;
     
     return footer;
+    } else {
+        UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 2)];
+        footer.backgroundColor = HexColor(footerBackgroundLineColor);
+        
+        return footer;
+    }
     
 }
 
@@ -158,7 +165,7 @@
     if (section==2) {
         return 100;
     } else {
-        return 0.1;
+        return 2;
     }
 }
 
